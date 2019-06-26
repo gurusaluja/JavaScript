@@ -120,24 +120,39 @@
         console.log(hour);
         if(document.body)
         document.getElementById('col').style.backgroundImagesr="url('Images\Night.jpg')";
+        document.getElementById('col').style.backgroundRepeat="no-repeat";
+        document.getElementById('col').style.backgroundSize="100% 100%";
+        
+        document.getElementById('col').style.color="white";
     }
     //5AM to 6AM
     if(hour >= 5 && hour<6){
         console.log(hour);
         if(document.body)
         document.getElementById('col').style.backgroundImage="url('Images/Sunrise.jpg')";
+        document.getElementById('col').style.backgroundRepeat="no-repeat";
+        document.getElementById('col').style.backgroundSize="100% 100%";
+        
+        document.getElementById('col').style.color="white";
     }
     //6AM to 10AM
     else if(hour >= 6 && hour<10){
         console.log(hour);
         if(document.body)
         document.getElementById('col').style.backgroundImage="url('Images/Morning.jpg')";
+        document.getElementById('col').style.backgroundRepeat="no-repeat";
+        document.getElementById('col').style.backgroundSize="100% 100%";
+        
+        document.getElementById('col').style.color="white";
     }
     //10AM to 4PM
     else if(hour >= 10 && hour<16){
         console.log(hour);
         if(document.body){
         document.getElementById('col').style.background="url('Images/noon.jpg')";
+        document.getElementById('col').style.backgroundRepeat="no-repeat";
+        document.getElementById('col').style.backgroundSize="100% 100%";
+        
         document.getElementById('col').style.color="white";
         console.log("Images\noon.jpg")};
     }
@@ -157,6 +172,8 @@
         console.log(hour);
         if(document.body){
         document.getElementById('col').style.backgroundImage="url('Images/Evening.jpg')";
+             document.getElementById('col').style.backgroundRepeat="no-repeat";
+        document.getElementById('col').style.backgroundSize="100% 100%";
         document.getElementById('col').style.color="white"}
     }
 </script>    

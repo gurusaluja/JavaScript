@@ -12,6 +12,7 @@ header {
     padding: 5px;
     font-size: 35px;
     color: white;
+    border-radius: 10px;
 }
 
 nav {
@@ -21,6 +22,8 @@ nav {
     height: 100%;
     background: #cccc;
     padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
     
 }
 
@@ -32,6 +35,8 @@ article {
     height: 100%;
     overflow: auto;
     background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 5px
 }
 
 section {
@@ -46,6 +51,7 @@ footer {
     color: white;
     overflow: hidden;
     display: flex;
+    border-radius: 10px
 }
 
 .container {
