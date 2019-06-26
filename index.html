@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gurucharan Singh Saluja - Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="Images\header.png" alt="Not loaded" height="220px" width="100%">
+            <h4 class="bottom-right">Gurucharan Singh Saluja</h4>
+            <p class="bottom-right1">Engineer</p>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <img src="Images\my.JPG" alt="Not loaded" height="100%" width="100%" style="border-radius: 50%"><br>
+            <em>
+                Gurucharan Singh Saluja
+            </em>
+            <br>
+            <em>
+                Engineer at Enquero
+            </em>
+
+            <br/>
+            <br/>
+
+            <em><strong> Technical Skills </strong></em> <br/> ----------------------------------
+            <br/>
+            <ul style="word-wrap: break-word">
+                <li> <strong> Subject of Interest </strong> <br> C,VB,Python </li>
+                <li> <strong>Programming Languages </strong> <br> C, C++,VB,VB.Net,JAVA,Python </li>
+                <li> <strong> Data Mining	</strong> <br> Python, Jupyter Lab, R, RapidMiner </li>
+                <li> <strong> Database Management System </strong> <br> SQL, MySQL </li>
+            </ul>
+            
+        </nav>
+
+        <article id="col">
+            <em><strong>Projects and Research domain </strong></em> <br/>
+            <br/>
+            <ul>
+
+                <li><strong> Fertilizer Retail Management </strong></li>
+                <em>Date</em> : Start - 2014 End - 2016 <br>
+                <em>Group</em> : Individual <br>
+                <em>Description</em> <br>
+                <p>This is basically Inventory Management System for Fertilizer Retail Shop with O’ From supported. Front-End Design by VB 6 and VB.Net and Back-End MS Access.</p>
+                <br>
+                <li> <strong> Material Management for Rice Mill Industry </strong> </li>
+                <em>Date</em> : Start - 2015 End - 2015 <br>
+                <em>Group</em> : Individual <br>
+                <em>Description</em> <br>
+                <p>This is for Rice Mill Industry for maintaining the spare parts, transportation and other IN/OUT Material. Front-End Design by VB 6 and Back-End MS Access.</p>
+                <br>
+                <li> <strong> App for Android </strong> </li>
+                <em>Date</em> : Start - 2017 End - 2017 <br>
+                <em>Group</em> : 2 People <br>
+                <em>Description</em> <br>
+                <p>This is an Android application for laundry booking and searching laundry services with help of nearby location using Google MAPS API. Front-End Design by Android Studio and Back-End PHP.</p>
+                <br>
+                <li> <strong> Message Encryption </strong> </li>
+                <em>Date</em> : Start - 2018 End – 2018 <br>
+                <em>Group</em> : 2 People <br>
+                <em>Description</em> <br>
+                <p>This is for Encryption the message using AES (For key size Select), Elliptic Curve (for Random Curve generation) and Diffie-Hellman (for Key Exchange). It is implemented in java</p>
+                <br>
+                <li> <strong> Comparative study to predict the kidney disease for the clinical data using classification techniques </strong> </li>
+                <em>Date</em> : Start - 2017 End - 2017 <br>
+                <em>Group</em> : Individual <br>
+                <em>Description</em> <br>
+                <p>This is Journal Paper which is classify that weather kidney is in risk stage and normal stage and how much other diseases affects kidney disease by using classification techniques. The implementation for this done in R.</p>
+                <br>
+                <li> <strong> Stock Market prediction using Reinforcement Learning </strong> </li>
+                <em>Date</em> : Start - 2018 End – 2019 <br>
+                <em>Group</em> : Individual <br>
+                <em>Description</em> <br>
+                <p>This is also Journal Paper. This is for prediction for the stock market price using Q-Learning Application for calculating probability of profit or loss for stock and LSTM is used to predict the price. This is implementing in Python with
+                    tensorflow and keras packages.</p>
+                <br>
+                <li> <strong> Wander-O-Bot: Travel Chatbot </strong> </li>
+                <em>Date</em> : Start - 2019 End – Current <br>
+                <em>Group</em>: Individual <br>
+                <em>Description</em> <br>
+                <p>This is also Journal Paper in which I’m currently working on. This is for travel agent chatbot for answering the user with famous place and famous about that place. In this seq2seq model implemented with LSTM and Google MAPS API as well
+                    as Wikipedia API is used to train the model. This will work in both offline as well as online.</p>
+
+        </article>
+    </section>
+
+    <footer>
+        <span style="width:50%; text-align:left; flex-direction: column">
+            <span style="font-size: 80%; text-align: left">Contact:</span>
+            <div>
+            <a href="tel:9200300303"> <img src="Images\phone.png" alt="Contact" width="2%" style="padding: 3px"> 9200300303</a><br>
+            <a href="mailto:igurusaluja@gmail.com"><img src="Images\gmail.jpg" alt="GMail" width="2%" style="padding: 0px">igurusaluja@gmail.com</a>
+            </div>
+        </span>
+        <span style="width:50%; text-align:right; flex-direction: column ">
+            <span style="font-size: 80%">Follow me on:</span>
+            <div>
+            <a href="https://www.linkedin.com/in/gurucharan-singh-saluja-104987126"> <img src="Images\linkedin.png" alt="LinkedIn link" width="4%" style="padding: 3px"> </a>
+            <a href="https://github.com/gurusaluja"><img src="Images\github.svg" alt="Github Link" width="4%" style="padding: 3px"></a>
+            </div>
+        </span>
+
+    </footer>
+</body>
+
+<script>
+    var date= new Date();
+    hour = date.getHours();
+    
+    //8PM to 5AM
+    if(hour >= 20 && hour<5){
+        console.log(hour);
+        if(document.body)
+        document.getElementById('col').style.backgroundImagesr="url('Images\Night.jpg')";
+    }
+    //5AM to 6AM
+    if(hour >= 5 && hour<6){
+        console.log(hour);
+        if(document.body)
+        document.getElementById('col').style.backgroundImage="url('Images/Sunrise.jpg')";
+    }
+    //6AM to 10AM
+    else if(hour >= 6 && hour<10){
+        console.log(hour);
+        if(document.body)
+        document.getElementById('col').style.backgroundImage="url('Images/Morning.jpg')";
+    }
+    //10AM to 4PM
+    else if(hour >= 10 && hour<16){
+        console.log(hour);
+        if(document.body){
+        document.getElementById('col').style.background="url('Images/noon.jpg')";
+        document.getElementById('col').style.color="white";
+        console.log("Images\noon.jpg")};
+    }
+    //4PM to 6PM
+    else if(hour >= 16 && hour<18){
+        console.log(hour);
+        if(document.body){
+        document.getElementById('col').style.background="url('Images/sunset.jpg')";
+        document.getElementById('col').style.backgroundRepeat="no-repeat";
+        document.getElementById('col').style.backgroundSize="100% 100%";
+        document.getElementById('col').style.color="white";
+        }
+    
+    }
+    //6PM to 8PM
+    else if(hour>=18 && hour<20){
+        console.log(hour);
+        if(document.body){
+        document.getElementById('col').style.backgroundImage="url('Images/Evening.jpg')";
+        document.getElementById('col').style.color="white"}
+    }
+</script>    
+
+</html>
