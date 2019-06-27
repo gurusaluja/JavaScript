@@ -37,7 +37,11 @@
                 <li> <strong> Data Mining	</strong> <br> Python, Jupyter Lab, R, RapidMiner </li>
                 <li> <strong> Database Management System </strong> <br> SQL, MySQL </li>
             </ul>
-            
+
+            <div id="gitBlock">
+                <button onclick="gitdata()" id="gitbutton">Git Repo</button>
+                <div id="GitRepo"></div>
+            </div>
         </nav>
 
         <article id="col">
@@ -95,87 +99,109 @@
     <footer>
         <span style="width:50%; text-align:left; flex-direction: column">
             <span style="font-size: 80%; text-align: left">Contact:</span>
-            <div>
+        <div>
             <a href="tel:9200300303"> <img src="Images\phone.png" alt="Contact" width="2%" style="padding: 3px"> 9200300303</a><br>
             <a href="mailto:igurusaluja@gmail.com"><img src="Images\gmail.jpg" alt="GMail" width="2%" style="padding: 0px">igurusaluja@gmail.com</a>
-            </div>
+        </div>
         </span>
         <span style="width:50%; text-align:right; flex-direction: column ">
             <span style="font-size: 80%">Follow me on:</span>
-            <div>
+        <div>
             <a href="https://www.linkedin.com/in/gurucharan-singh-saluja-104987126"> <img src="Images\linkedin.png" alt="LinkedIn link" width="4%" style="padding: 3px"> </a>
             <a href="https://github.com/gurusaluja"><img src="Images\github.svg" alt="Github Link" width="4%" style="padding: 3px"></a>
-            </div>
+        </div>
         </span>
+
 
     </footer>
 </body>
 
 <script>
-    var date= new Date();
+    var date = new Date();
     hour = date.getHours();
-    
+
     //8PM to 5AM
-    if(hour >= 20 && hour<5){
+    if (hour >= 20 && hour < 5) {
         console.log(hour);
-        if(document.body)
-        document.getElementById('col').style.backgroundImagesr="url('Images\Night.jpg')";
-        document.getElementById('col').style.backgroundRepeat="no-repeat";
-        document.getElementById('col').style.backgroundSize="100% 100%";
-        
-        document.getElementById('col').style.color="white";
+        if (document.body)
+            document.getElementById('col').style.backgroundImagesr = "url('Images\Night.jpg')";
+        document.getElementById('col').style.backgroundRepeat = "no-repeat";
+        document.getElementById('col').style.backgroundSize = "100% 100%";
+
+        document.getElementById('col').style.color = "white";
     }
     //5AM to 6AM
-    if(hour >= 5 && hour<6){
+    if (hour >= 5 && hour < 6) {
         console.log(hour);
-        if(document.body)
-        document.getElementById('col').style.backgroundImage="url('Images/Sunrise.jpg')";
-        document.getElementById('col').style.backgroundRepeat="no-repeat";
-        document.getElementById('col').style.backgroundSize="100% 100%";
-        
-        document.getElementById('col').style.color="white";
+        if (document.body)
+            document.getElementById('col').style.backgroundImage = "url('Images/Sunrise.jpg')";
+        document.getElementById('col').style.backgroundRepeat = "no-repeat";
+        document.getElementById('col').style.backgroundSize = "100% 100%";
+
+        document.getElementById('col').style.color = "white";
     }
     //6AM to 10AM
-    else if(hour >= 6 && hour<10){
+    else if (hour >= 6 && hour < 10) {
         console.log(hour);
-        if(document.body)
-        document.getElementById('col').style.backgroundImage="url('Images/Morning.jpg')";
-        document.getElementById('col').style.backgroundRepeat="no-repeat";
-        document.getElementById('col').style.backgroundSize="100% 100%";
-        
-        document.getElementById('col').style.color="white";
+        if (document.body)
+            document.getElementById('col').style.backgroundImage = "url('Images/Morning.jpg')";
+        document.getElementById('col').style.backgroundRepeat = "no-repeat";
+        document.getElementById('col').style.backgroundSize = "100% 100%";
+
+        document.getElementById('col').style.color = "white";
     }
     //10AM to 4PM
-    else if(hour >= 10 && hour<16){
+    else if (hour >= 10 && hour < 16) {
         console.log(hour);
-        if(document.body){
-        document.getElementById('col').style.background="url('Images/noon.jpg')";
-        document.getElementById('col').style.backgroundRepeat="no-repeat";
-        document.getElementById('col').style.backgroundSize="100% 100%";
-        
-        document.getElementById('col').style.color="white";
-        console.log("Images\noon.jpg")};
+        if (document.body) {
+            document.getElementById('col').style.background = "url('Images/noon.jpg')";
+            document.getElementById('col').style.backgroundRepeat = "no-repeat";
+            document.getElementById('col').style.backgroundSize = "100% 100%";
+
+            document.getElementById('col').style.color = "white";
+            console.log("Images\noon.jpg")
+        };
     }
     //4PM to 6PM
-    else if(hour >= 16 && hour<18){
+    else if (hour >= 16 && hour < 18) {
         console.log(hour);
-        if(document.body){
-        document.getElementById('col').style.background="url('Images/sunset.jpg')";
-        document.getElementById('col').style.backgroundRepeat="no-repeat";
-        document.getElementById('col').style.backgroundSize="100% 100%";
-        document.getElementById('col').style.color="white";
+        if (document.body) {
+            document.getElementById('col').style.background = "url('Images/sunset.jpg')";
+            document.getElementById('col').style.backgroundRepeat = "no-repeat";
+            document.getElementById('col').style.backgroundSize = "100% 100%";
+            document.getElementById('col').style.color = "white";
         }
-    
+
     }
     //6PM to 8PM
-    else if(hour>=18 && hour<20){
+    else if (hour >= 18 && hour < 20) {
         console.log(hour);
-        if(document.body){
-        document.getElementById('col').style.backgroundImage="url('Images/Evening.jpg')";
-             document.getElementById('col').style.backgroundRepeat="no-repeat";
-        document.getElementById('col').style.backgroundSize="100% 100%";
-        document.getElementById('col').style.color="white"}
+        if (document.body) {
+            document.getElementById('col').style.backgroundImage = "url('Images/Evening.jpg')";
+            document.getElementById('col').style.backgroundRepeat = "no-repeat";
+            document.getElementById('col').style.backgroundSize = "100% 100%";
+            document.getElementById('col').style.color = "white"
+        }
     }
-</script>    
+    //var global;
+    function gitdata() {
+        function printRepoCount() {
+            var responseObj = JSON.parse(this.responseText);
+            //global = responseObj;
+            var gitId = document.getElementById("GitRepo");
+            if (gitId.innerHTML == "") {
+                for (var iteration = 0; iteration < responseObj.length; iteration++) {
+                    gitId.innerHTML += `<div class="tooltip"><a href=${responseObj[iteration]["html_url"]}>${responseObj[iteration]["name"]}</a><span class="tooltiptext">${responseObj[iteration]["description"]}</span></div><br>`;
+                }
+            } else {
+                gitId.innerHTML = "";
+            }
+        }
+        var request = new XMLHttpRequest();
+        request.onload = printRepoCount;
+        request.open('get', 'https://api.github.com/users/gurusaluja/repos', true);
+        request.send();
+    }
+</script>
 
 </html>
