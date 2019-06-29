@@ -11,7 +11,11 @@
         <div class="container">
             <img src="Images\header.png" alt="Not loaded" height="120px" width="100%">
             <h4 class="bottom-right">Gurucharan Singh Saluja</h4>
-            <div class="bottom-right1">Engineer <div><a href="mailto:igurusaluja@gmail.com" style="font-size: 70%;"><img src="Images\gmail.jpg" alt="GMail" width="2%" style="padding: 0px">  igurusaluja@gmail.com</a></div></div>
+            <div class="bottom-right1">Engineer
+                <div>
+                    <a href="mailto:igurusaluja@gmail.com" style="font-size: 70%;"><img src="Images\gmail.jpg" alt="GMail" width="2%" style="padding: 0px"> igurusaluja@gmail.com</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -46,58 +50,50 @@
 
         <article id="col">
             <div class="Block" id="fcol"><em><strong>Projects and Research domain </strong></em> <br/>
-            <br/>
-                <div class="Block">
-                <strong> Fertilizer Retail Management </strong><br>
-                <em>Date</em> : Start - 2014 End - 2016 <br>
-                <em>Group</em> : Individual <br>
-                <em>Description</em> <br>
-                <p>This is basically Inventory Management System for Fertilizer Retail Shop with O’ From supported. Front-End Design by VB 6 and VB.Net and Back-End MS Access.</p>
+                <br/>
+                <div class="Block padd" onclick="showDescription('FRM')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> Fertilizer Retail Management </strong>
+                    <div id="FRM"></div>
+                    </span>
                 </div>
-                <div class="Block">
-                <strong> Material Management for Rice Mill Industry </strong> <br>
-                <em>Date</em> : Start - 2015 End - 2015 <br>
-                <em>Group</em> : Individual <br>
-                <em>Description</em> <br>
-                <p>This is for Rice Mill Industry for maintaining the spare parts, transportation and other IN/OUT Material. Front-End Design by VB 6 and Back-End MS Access.</p>
+                <div class="Block padd" onclick="showDescription('MMRMI')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> Material Management for Rice Mill Industry </strong>
+                    <div id="MMRMI"></div>
+                    </span>
                 </div>
-                <div class="Block">
-                 <strong> App for Android </strong><br>
-                <em>Date</em> : Start - 2017 End - 2017 <br>
-                <em>Group</em> : 2 People <br>
-                <em>Description</em> <br>
-                <p>This is an Android application for laundry booking and searching laundry services with help of nearby location using Google MAPS API. Front-End Design by Android Studio and Back-End PHP.</p>
-                </div >
-                <div class="Block">
-                 <strong> Message Encryption </strong><br>
-                <em>Date</em> : Start - 2018 End – 2018 <br>
-                <em>Group</em> : 2 People <br>
-                <em>Description</em> <br>
-                <p>This is for Encryption the message using AES (For key size Select), Elliptic Curve (for Random Curve generation) and Diffie-Hellman (for Key Exchange). It is implemented in java</p>
+                <div class="Block padd" onclick="showDescription('AA')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> App for Android </strong>
+                    <div id="AA"></div>
+                    </span>
                 </div>
-                <div class="Block">
-                 <strong> Comparative study to predict the kidney disease for the clinical data using classification techniques </strong><br>
-                <em>Date</em> : Start - 2017 End - 2017 <br>
-                <em>Group</em> : Individual <br>
-                <em>Description</em> <br>
-                <p>This is Journal Paper which is classify that weather kidney is in risk stage and normal stage and how much other diseases affects kidney disease by using classification techniques. The implementation for this done in R.</p>
+                <div class="Block padd" onclick="showDescription('ME')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> Message Encryption </strong>
+                    <div id="ME"></div>
+                    </span>
                 </div>
-                <div class="Block">
-                <strong> Stock Market prediction using Reinforcement Learning </strong> <br>
-                <em>Date</em> : Start - 2018 End – 2019 <br>
-                <em>Group</em> : Individual <br>
-                <em>Description</em> <br>
-                <p>This is also Journal Paper. This is for prediction for the stock market price using Q-Learning Application for calculating probability of profit or loss for stock and LSTM is used to predict the price. This is implementing in Python with
-                    tensorflow and keras packages.</p>
+                <div class="Block padd" onclick="showDescription('KIDDIS')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> Comparative study to predict the kidney disease for the clinical data using classification techniques </strong>
+                    <div id="KIDDIS"></div>
+                    </span>
                 </div>
-                <div class="Block">
-                <strong> Wander-O-Bot: Travel Chatbot </strong> <br>
-                <em>Date</em> : Start - 2019 End – Current <br>
-                <em>Group</em>: Individual <br>
-                <em>Description</em> <br>
-                <p>This is also Journal Paper in which I’m currently working on. This is for travel agent chatbot for answering the user with famous place and famous about that place. In this seq2seq model implemented with LSTM and Google MAPS API as well
-                    as Wikipedia API is used to train the model. This will work in both offline as well as online.</p>
+                <div class="Block padd" onclick="showDescription('SMRL')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> Stock Market prediction using Reinforcement Learning </strong>
+                    <div id="SMRL"></div>
+                    </span>
                 </div>
+                <div class="Block padd" onclick="showDescription('TC')">
+                    <span info="Click here to get info">
+                    <strong class="highlight"> Wander-O-Bot: Travel Chatbot </strong>
+                    <div id="TC"></div>
+                    </span>
+                </div>
+
             </div>
         </article>
     </section>
@@ -125,9 +121,9 @@
 <script>
     var date = new Date();
     hour = date.getHours();
-    function setConfig(url){
-        if (document.body)
-        {
+
+    function setConfig(url) {
+        if (document.body) {
             document.getElementById('col').style.backgroundImage = `url('${url}')`;
             document.getElementById('col').style.backgroundRepeat = "no-repeat";
             document.getElementById('col').style.backgroundSize = "100% 100%";
@@ -135,7 +131,7 @@
     }
     //console.log(hour);
     //8PM to 5AM
-    if (hour/20 < 5 || hour < 5) {
+    if (hour / 20 < 5 || hour < 5) {
         setConfig("Images/Night.jpg");
     }
     //5AM to 6AM
@@ -158,18 +154,18 @@
     else if (hour >= 18 && hour < 20) {
         setConfig("Images/Evening.jpg");
     }
-    
+
     /*var gitB = document.getElementById("tool");
     gitB.innerHTML = `<div class="tooltip"><span class="tooltiptext">Click here to get GIT Repository</span></div>`;*/
-    
-    document.getElementById('col').addEventListener("onmouseover",document.getElementById('col').reload);
-   /* function load()
-    {
-        setTimeout("window.open(self.location, '_self');", 5000);
-        
-        //setTimeout("document.getElementById('col').reload();", 5000);
-    }*/
-    
+
+    document.getElementById('col').addEventListener("onmouseover", document.getElementById('col').reload);
+    /* function load()
+     {
+         setTimeout("window.open(self.location, '_self');", 5000);
+         
+         //setTimeout("document.getElementById('col').reload();", 5000);
+     }*/
+
     //var global;
     function gitdata() {
         function printRepoCount() {
@@ -188,6 +184,62 @@
         request.onload = printRepoCount;
         request.open('get', 'https://api.github.com/users/gurusaluja/repos', true);
         request.send();
+    }
+
+    function showDescription(projectName) {
+        var elementMSG;
+        if (projectName === "FRM") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2014 End - 2016 <br>
+                    <em>Group</em> : Individual <br>
+                    <em>Description</em>
+                    <p>This is basically Inventory Management System for Fertilizer Retail Shop with O’ From supported. Front-End Design by VB 6 and VB.Net and Back-End MS Access.</p>`;
+        } else if (projectName === "MMRMI") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2015 End - 2015 <br>
+                    <em>Group</em> : Individual <br>
+                    <em>Description</em>
+                    <p>This is for Rice Mill Industry for maintaining the spare parts, transportation and other IN/OUT Material. Front-End Design by VB 6 and Back-End MS Access.</p>`;
+        } else if (projectName === "AA") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2017 End - 2017 <br>
+                    <em>Group</em> : 2 People <br>
+                    <em>Description</em>
+                    <p>This is an Android application for laundry booking and searching laundry services with help of nearby location using Google MAPS API. Front-End Design by Android Studio and Back-End PHP.</p>`;
+        } else if (projectName === "ME") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2018 End – 2018 <br>
+                    <em>Group</em> : 2 People <br>
+                    <em>Description</em>
+                    <p>This is for Encryption the message using AES (For key size Select), Elliptic Curve (for Random Curve generation) and Diffie-Hellman (for Key Exchange). It is implemented in java</p>`;
+        } else if (projectName === "KIDDIS") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2017 End - 2017 <br>
+                    <em>Group</em> : Individual <br>
+                    <em>Description</em>
+                    <p>This is Journal Paper which is classify that weather kidney is in risk stage and normal stage and how much other diseases affects kidney disease by using classification techniques. The implementation for this done in R.</p>`;
+        } else if (projectName === "SMRL") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2018 End – 2019 <br>
+                    <em>Group</em> : Individual <br>
+                    <em>Description</em>
+                    <p>This is also Journal Paper. This is for prediction for the stock market price using Q-Learning Application for calculating probability of profit or loss for stock and LSTM is used to predict the price. This is implementing in Python with tensorflow and keras packages.</p>`;
+        } else if (projectName === "TC") {
+            elementMSG = `<br>
+                    <em>Date</em> : Start - 2019 End – Current <br>
+                    <em>Group</em>: Individual <br>
+                    <em>Description</em>
+                    <p>This is also Journal Paper in which I’m currently working on. This is for travel agent chatbot for answering the user with famous place and famous about that place. In this seq2seq model implemented with LSTM and Google MAPS API as well as Wikipedia API is used to train the model. This will work in both offline as well as online.</p>`;
+        }
+        checkAssign(elementMSG, projectName);
+    }
+
+    function checkAssign(elementMSG, elementID) {
+        if (document.getElementById(elementID).innerHTML == "") {
+            document.getElementById(elementID).innerHTML = elementMSG;
+        } else {
+            document.getElementById(elementID).innerHTML = "";
+        }
     }
 </script>
 
